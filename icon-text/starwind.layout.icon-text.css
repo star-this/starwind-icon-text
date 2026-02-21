@@ -1,0 +1,17 @@
+@layer starwind.layout {
+    :where(sw-icon-text) {
+        display: inline-flex;
+        align-items: var(--sw-icon-text-align, center);
+        gap: var(--sw-icon-text-gap, var(--sw-space-xs-s, 0.5rem));
+    }
+
+    :where(sw-icon-text) > :where(:first-child) {
+        inline-size: var(--sw-icon-size, 1em);
+        block-size: var(--sw-icon-size, 1em);
+        flex: 0 0 auto;
+    }
+
+    :where(sw-icon-text) > :where(:last-child) {
+        min-inline-size: 0;
+    }
+}

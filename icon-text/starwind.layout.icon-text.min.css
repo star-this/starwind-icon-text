@@ -1,0 +1,1 @@
+@layer starwind.layout{:where(sw-icon-text){align-items:var(--sw-icon-text-align,center);gap:var(--sw-icon-text-gap,var(--sw-space-xs-s,.5rem));display:inline-flex}:where(sw-icon-text)>:where(:first-child){inline-size:var(--sw-icon-size,1em);block-size:var(--sw-icon-size,1em);flex:none}:where(sw-icon-text)>:where(:last-child){min-inline-size:0}}
